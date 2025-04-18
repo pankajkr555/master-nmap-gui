@@ -1,0 +1,99 @@
+=========================
+💣 Nmap Master Command List
+=========================
+
+1. Ping Scan
+Command: nmap -sn
+Use: Checks if hosts are up (no port scanning).
+
+2. ARP Ping Scan
+Command: nmap -sn -PR
+Use: Uses ARP request to discover hosts on a local network.
+
+3. UDP Ping Scan
+Command: nmap -sn -PU
+Use: Sends UDP packets to check if host is alive.
+
+4. ICMP Echo Ping Scan
+Command: nmap -sn -PE
+Use: Sends ICMP Echo request (like ping).
+
+5. ICMP Address Mask Ping Scan
+Command: nmap -sn -PM
+Use: Sends ICMP address mask request for host discovery.
+
+6. TCP SYN Ping Scan
+Command: nmap -sn -PS
+Use: Sends TCP SYN packets to determine if host is up.
+
+7. TCP ACK Ping Scan
+Command: nmap -sn -PA
+Use: Sends TCP ACK packets to test if host is reachable.
+
+8. IP Protocol Ping Scan
+Command: nmap -sn -PO
+Use: Sends IP protocol packets to find alive hosts.
+
+9. TCP Connect Scan
+Command: nmap -sT -v
+Use: Performs full TCP connection scan with verbosity.
+
+10. Stealth SYN Scan
+Command: nmap -sS -v
+Use: Half-open TCP scan (more stealthy).
+
+11. Xmas Scan
+Command: nmap -sX -v
+Use: Sends TCP packets with FIN, URG, and PSH flags (used for firewall evasion).
+
+12. ACK Scan
+Command: nmap -sA -v
+Use: Used to map firewall rules; doesn’t establish connection.
+
+13. UDP Scan
+Command: nmap -sU -v
+Use: Scans for open UDP ports.
+
+14. Aggressive Full Scan
+Command: nmap -T4 -A -v
+Use: Fast scan with OS detection, version detection, script scanning, and traceroute.
+
+15. List Scan
+Command: nmap -sL -v
+Use: Just lists the targets without sending packets.
+
+16. SCTP INIT Scan
+Command: nmap -sY -v
+Use: SCTP (Stream Control Transmission Protocol) scan.
+
+17. SCTP COOKIE ECHO Scan
+Command: nmap -sZ -v
+Use: Another SCTP-based scan using COOKIE ECHO.
+
+18. OS Detection
+Command: nmap -O
+Use: Detects operating system of the target.
+
+19. Service Version Detection
+Command: nmap -sV
+Use: Detects versions of services running on open ports.
+
+20. Aggressive Scan
+Command: nmap -A
+Use: Enables OS detection, version detection, script scanning, and traceroute.
+
+21. UDP Scan (Top 10 Ports)
+Command: nmap -sU --top-ports 10
+Use: Scans top 10 most common UDP ports.
+
+22. Top 1000 TCP Ports
+Command: nmap --top-ports 1000
+Use: Scans top 1000 most commonly used TCP ports.
+
+23. Vulnerability Scan
+Command: nmap --script vuln
+Use: Runs scripts to find common vulnerabilities.
+
+==============================
+📌 Tip: Always run with sudo/root for accurate results.
+==============================
